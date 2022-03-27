@@ -1,7 +1,7 @@
 package repository
 import (
 	"github.com/jinzhu/gorm"
-	"git.imooc.com/coding-447/product/domain/model"
+	"product/domain/model"
 )
 type IProductRepository interface{
     InitTable() error

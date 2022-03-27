@@ -1,14 +1,14 @@
 package repository
 
 import (
+	"fy-user/domain/model"
 	"github.com/jinzhu/gorm"
-	"user/domain/model"
 )
 
 type IUserRepository interface {
 	//初始化数据表
 	InitTable() error
-	//根据用户名称查找用户信息
+	//根据用户名查询信息
 	FindUserByName(string) (*model.User,error)
 	//根据用户ID查找用户信息
 	FindUserByID(int64) (*model.User,error)
@@ -65,6 +65,3 @@ func (u *UserRepository)UpdateUser(user *model.User) error {
 func (u *UserRepository)FindAll() (userAll []model.User,err error){
 	return userAll,u.mysqlDb.Find(&userAll).Error
 }
-
-
-

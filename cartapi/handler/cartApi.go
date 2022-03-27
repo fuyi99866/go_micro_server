@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	cart "git.imooc.com/coding-447/cart/proto/cart"
-	cartApi "git.imooc.com/coding-447/cartApi/proto/cartApi"
+	cart "cart/proto/cart"
+	cartApi "cartApi/proto/cartApi"
 	"github.com/prometheus/common/log"
 	"strconv"
 )

@@ -2,18 +2,16 @@ package main
 
 import (
 	"fmt"
+	"fy-user/domain/repository"
+	"fy-user/domain/service"
+	"fy-user/handler"
+	user "fy-user/proto/user"
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/v2"
-	"user/domain/repository"
-	"user/domain/service"
-	"user/handler"
-	user "user/proto/user"
-
-	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 func main() {
-	//服务参数设置
+	//服务器参数配置
 	srv := micro.NewService(
 		micro.Name("go.micro.service.user"),
 		micro.Version("latest"),
@@ -21,29 +19,26 @@ func main() {
 	//初始化服务
 	srv.Init()
 
-	//创建数据库连接
-	db,err :=gorm.Open("mysql","root:123456@/micro?charset=utf8&parseTime=True&loc=Local")
+	//创建数据库
+	db, err := gorm.Open("mysql", "root:root@/micro?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		fmt.Println(err)
 	}
 	defer db.Close()
 
 	db.SingularTable(true)
-
-	//只执行一次，数据表初始化
-	//rp:=repository.NewUserRepository(db)
-	//rp.InitTable()
-
 	//创建服务实例
 	userDataService := service.NewUserDataService(repository.NewUserRepository(db))
 	//注册Handler
 	err = user.RegisterUserHandler(srv.Server(),&handler.User{UserDataService:userDataService})
+
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	// Run service
+	//运行服务
 	if err := srv.Run(); err != nil {
 		fmt.Println(err)
 	}
+
 }

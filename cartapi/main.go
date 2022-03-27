@@ -3,9 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
-	go_micro_service_cart "git.imooc.com/coding-447/cart/proto/cart"
-	"git.imooc.com/coding-447/cartApi/handler"
-	"git.imooc.com/coding-447/common"
+	go_micro_service_cart "cart/proto/cart"
+	"cartApi/handler"
+	common "fy-common"
+
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/client"
@@ -18,7 +19,7 @@ import (
 	"net"
 	"net/http"
 
-	cartApi "git.imooc.com/coding-447/cartApi/proto/cartApi"
+	cartApi "cartApi/proto/cartApi"
 )
 
 func main() {

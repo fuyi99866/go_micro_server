@@ -1,10 +1,10 @@
 package main
 
 import (
-	"git.imooc.com/coding-447/cart/domain/repository"
-	service2 "git.imooc.com/coding-447/cart/domain/service"
-	"git.imooc.com/coding-447/cart/handler"
-	"git.imooc.com/coding-447/common"
+	"cart/domain/repository"
+	service2 "cart/domain/service"
+	"cart/handler"
+	common "fy-common"
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"
@@ -15,7 +15,7 @@ import (
 	consul2 "github.com/micro/go-plugins/registry/consul/v2"
 	"github.com/opentracing/opentracing-go"
 
-	cart "git.imooc.com/coding-447/cart/proto/cart"
+	cart "cart/proto/cart"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )

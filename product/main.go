@@ -1,22 +1,22 @@
 package main
 
 import (
-	"git.imooc.com/coding-447/product/common"
-	"git.imooc.com/coding-447/product/domain/repository"
-	service2 "git.imooc.com/coding-447/product/domain/service"
-	"git.imooc.com/coding-447/product/handler"
+	common "fy-common"
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/registry"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
+	"product/domain/repository"
+	service2 "product/domain/service"
+	"product/handler"
 
 	consul2 "github.com/micro/go-plugins/registry/consul/v2"
 	"github.com/opentracing/opentracing-go"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	product "git.imooc.com/coding-447/product/proto/product"
+	product "product/proto/product"
 )
 
 func main() {

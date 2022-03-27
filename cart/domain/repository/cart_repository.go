@@ -2,7 +2,7 @@ package repository
 
 import (
 	"errors"
-	"git.imooc.com/coding-447/cart/domain/model"
+	"cart/domain/model"
 	"github.com/jinzhu/gorm"
 )
 

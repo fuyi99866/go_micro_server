@@ -1,6 +1,6 @@
 package repository
 import (
-	"git.imooc.com/coding-447/category/domain/model"
+	"category/domain/model"
 	"github.com/jinzhu/gorm"
 )
 type ICategoryRepository interface{

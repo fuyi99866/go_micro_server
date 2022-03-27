@@ -2,9 +2,8 @@ package service
 
 import (
 	"errors"
-	"user/domain/model"
-	"user/domain/repository"
-
+	"fy-user/domain/model"
+	"fy-user/domain/repository"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -77,5 +76,3 @@ func (u *UserDataService)CheckPwd(userName string ,pwd string) (isOk bool,err er
 	}
 	return ValidatePassword(pwd,user.HashPassword)
 }
-
-

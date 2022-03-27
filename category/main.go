@@ -1,10 +1,10 @@
 package main
 
 import (
-	"git.imooc.com/coding-447/category/common"
-	"git.imooc.com/coding-447/category/domain/repository"
-	service2 "git.imooc.com/coding-447/category/domain/service"
-	"git.imooc.com/coding-447/category/handler"
+	"category/domain/repository"
+	service2 "category/domain/service"
+	"category/handler"
+	common "fy-common"
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"
@@ -13,7 +13,7 @@ import (
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	category "git.imooc.com/coding-447/category/proto/category"
+	category "category/proto/category"
 )
 
 func main() {

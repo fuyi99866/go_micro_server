@@ -1,8 +1,8 @@
 package service
 
 import (
-	"git.imooc.com/coding-447/cart/domain/model"
-	"git.imooc.com/coding-447/cart/domain/repository"
+	"cart/domain/model"
+	"cart/domain/repository"
 )
 
 type ICartDataService interface {

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"git.imooc.com/coding-447/category/domain/model"
-	"git.imooc.com/coding-447/category/domain/repository"
+	"category/domain/model"
+	"category/domain/repository"
 )
 
 type ICategoryDataService interface {

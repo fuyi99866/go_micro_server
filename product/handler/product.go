@@ -3,10 +3,10 @@ package handler
 import (
 	"context"
 	"fmt"
-	"git.imooc.com/coding-447/product/common"
-	"git.imooc.com/coding-447/product/domain/model"
-	"git.imooc.com/coding-447/product/domain/service"
-	. "git.imooc.com/coding-447/product/proto/product"
+	common "fy-common"
+	"product/domain/model"
+	"product/domain/service"
+	. "product/proto/product"
 )
 type Product struct{
      ProductDataService service.IProductDataService

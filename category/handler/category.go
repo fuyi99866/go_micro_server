@@ -2,10 +2,10 @@ package handler
 
 import (
 	"context"
-	"git.imooc.com/coding-447/category/common"
-	"git.imooc.com/coding-447/category/domain/model"
-	"git.imooc.com/coding-447/category/domain/service"
-	category "git.imooc.com/coding-447/category/proto/category"
+	"category/domain/model"
+	"category/domain/service"
+	category "category/proto/category"
+	common "fy-common"
 	"github.com/prometheus/common/log"
 )
 type Category struct{

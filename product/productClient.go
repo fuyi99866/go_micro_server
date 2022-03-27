@@ -3,14 +3,14 @@ package main
 import (
 	"context"
 	"fmt"
-	"git.imooc.com/coding-447/product/common"
-	go_micro_service_product "git.imooc.com/coding-447/product/proto/product"
+	common "fy-common"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/registry"
 	consul2 "github.com/micro/go-plugins/registry/consul/v2"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
 	"log"
+	go_micro_service_product "product/proto/product"
 )
 
 func main()  {

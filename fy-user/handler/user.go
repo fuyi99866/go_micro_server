@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	"user/domain/model"
-	"user/domain/service"
-	user "user/proto/user"
+	"fy-user/domain/model"
+	"fy-user/domain/service"
+	user "fy-user/proto/user"
 )
 
 type User struct{
