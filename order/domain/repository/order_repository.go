@@ -2,7 +2,7 @@ package repository
 import (
 	"errors"
 	"github.com/jinzhu/gorm"
-	"git.imooc.com/coding-447/order/domain/model"
+	"order/domain/model"
 )
 type IOrderRepository interface{
     InitTable() error

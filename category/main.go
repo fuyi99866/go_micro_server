@@ -4,7 +4,7 @@ import (
 	"category/domain/repository"
 	service2 "category/domain/service"
 	"category/handler"
-	common "fy-common"
+	"github.com/fuyi99866/go_micro_common/common"
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"

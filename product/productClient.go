@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	common "fy-common"
+	"github.com/fuyi99866/go_micro_common/common"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/registry"
 	consul2 "github.com/micro/go-plugins/registry/consul/v2"

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"git.imooc.com/coding-447/order/domain/model"
-	"git.imooc.com/coding-447/order/domain/repository"
+	"order/domain/model"
+	"order/domain/repository"
 )
 
 type IOrderDataService interface {

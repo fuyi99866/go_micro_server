@@ -1,11 +1,7 @@
 package main
 
 import (
-	"git.imooc.com/coding-447/common"
-	"git.imooc.com/coding-447/order/domain/repository"
-	service2 "git.imooc.com/coding-447/order/domain/service"
-	"git.imooc.com/coding-447/order/handler"
-	order "git.imooc.com/coding-447/order/proto/order"
+	"github.com/fuyi99866/go_micro_common/common"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/micro/go-micro/v2"
@@ -16,6 +12,10 @@ import (
 	ratelimit "github.com/micro/go-plugins/wrapper/ratelimiter/uber/v2"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
+	"order/domain/repository"
+	service2 "order/domain/service"
+	"order/handler"
+	order "order/proto/order"
 )
 
 var (

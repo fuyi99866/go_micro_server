@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 	"fmt"
-	common "fy-common"
+	"github.com/fuyi99866/go_micro_common/common"
 	"product/domain/model"
 	"product/domain/service"
 	. "product/proto/product"

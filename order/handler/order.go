@@ -2,10 +2,10 @@ package handler
 
 import (
 	"context"
-	"git.imooc.com/coding-447/common"
-	"git.imooc.com/coding-447/order/domain/model"
-	"git.imooc.com/coding-447/order/domain/service"
-	. "git.imooc.com/coding-447/order/proto/order"
+	"github.com/fuyi99866/go_micro_common/common"
+	"order/domain/model"
+	"order/domain/service"
+	. "order/proto/order"
 )
 type Order struct{
      OrderDataService service.IOrderDataService
