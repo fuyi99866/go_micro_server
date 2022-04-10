@@ -5,7 +5,6 @@ import (
 	"fmt"
 	go_micro_service_cart "cart/proto/cart"
 	"cartApi/handler"
-	common "fy-common"
 
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/micro/go-micro/v2"
